@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage -->
+  <url>
+    <loc>https://smileandgreet.ma/</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://smileandgreet.ma/og-image.jpg</image:loc>
+      <image:title>Smile & Greet - Agence Hôtesses Premium Maroc</image:title>
+      <image:caption>Leader des services d'hôtesses d'accueil au Maroc</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- French version -->
+  <url>
+    <loc>https://smileandgreet.ma/fr</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- English version -->
+  <url>
+    <loc>https://smileandgreet.ma/en</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Arabic version -->
+  <url>
+    <loc>https://smileandgreet.ma/ar</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Services pages -->
+  <url>
+    <loc>https://smileandgreet.ma/services</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://smileandgreet.ma/services/accueil-reception</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://smileandgreet.ma/services/animation-evenementielle</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://smileandgreet.ma/services/evenements-speciaux</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Contact page -->
+  <url>
+    <loc>https://smileandgreet.ma/contact</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- About page -->
+  <url>
+    <loc>https://smileandgreet.ma/about</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>
