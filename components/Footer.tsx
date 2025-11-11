@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react'
+import { Phone, Mail, MapPin, Instagram, Linkedin } from 'lucide-react'
 import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
 
@@ -9,11 +9,6 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    {
-      icon: Facebook,
-      href: 'https://facebook.com/smileandgreet',
-      name: 'Facebook'
-    },
     {
       icon: Instagram,
       href: 'https://instagram.com/smileandgreet',
@@ -66,7 +61,7 @@ const Footer = () => {
             className="flex flex-wrap items-center gap-4 text-sm"
             style={{ color: '#e7e6b8' }}
           >
-            <a href="tel:+212707776819" className="flex items-center hover:opacity-80 transition-opacity">
+            <a href="https://wa.me/212707776819" target="_blank" rel="noopener noreferrer" className="flex items-center hover:opacity-80 transition-opacity">
               <Phone className="w-4 h-4 mr-1" />
               +212 707-776819
             </a>

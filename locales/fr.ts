@@ -65,29 +65,31 @@ export const fr = {
   services: {
     title: "Nos services",
     subtitle: "Solutions complètes pour vos événements",
-    description: "De l'accueil à l'animation, nous offrons une gamme complète de services adaptés à tous vos besoins événementiels. Notre équipe d'experts vous accompagne pour créer des expériences uniques et mémorables.",
+    description: "De l'accueil à l'animation, nous offrons une gamme complète de services pour faire de votre événement un succès mémorable.",
     categories: {
       eventHosting: {
         title: "ACCUEIL ÉVÉNEMENTIEL",
-        services: {
-          congresses: "Congrès et conférences",
-          fairs: "Salons et foires",
-          inaugurations: "Inaugurations",
-          launches: "Lancements de produits",
-          galas: "Galas et soirées",
-          professional: "Événements professionnels"
-        }
+        items: [
+          { name: "Hôtesses & hôtes d'accueil événementiel", description: "FR/AR/EN + autres langues sur demande : RU, ES, etc." },
+          { name: "Accueil, orientation et placement des invités", description: "Guidance professionnelle des visiteurs" },
+          { name: "Gestion des espaces VIP, lounges & protocolaires", description: "Service premium pour espaces exclusifs" },
+          { name: "Check-in & contrôle des listes d'invités", description: "QR code, tablettes, impression sur place" },
+          { name: "Distribution de badges/bracelets", description: "Gestion des accréditations" },
+          { name: "Contrôle d'accès & gestion des flux", description: "Sécurité et organisation des entrées" },
+          { name: "Vestiaire & desk d'informations", description: "Services complémentaires d'accueil" },
+          { name: "Ambassadeurs / ambassadrices de marque", description: "Présentations produits, démonstrations" },
+          { name: "Hôtesses/hôtes internationaux", description: "Russophones, francophones, anglophones, Afrique subsaharienne" },
+          { name: "Animateurs/animatrices en rollers", description: "Animation dynamique et originale" },
+          { name: "Mascottes pour opérations grand public", description: "Animation ludique pour tous publics" }
+        ]
       },
-      animation: {
-        title: "ANIMATION",
-        services: {
-          commercial: "Animation commerciale",
-          promotion: "Promotion des ventes",
-          sampling: "Distribution d'échantillons",
-          surveys: "Enquêtes et sondages",
-          awareness: "Sensibilisation",
-          roadshows: "Roadshows"
-        }
+      mobility: {
+        title: "MOBILITÉ & TRANSFERTS",
+        items: [
+          { name: "Transferts aéroport ↔ hôtel / lieu d'événement", description: "Transport VIP et professionnel" },
+          { name: "Transport pour city tours & navettes", description: "Circuits organisés et navettes" },
+          { name: "Chauffeurs privés & voituriers", description: "Service de conduite personnalisé" }
+        ]
       }
     },
     cta: {
@@ -230,7 +232,10 @@ export const fr = {
       marrakech: "Destination touristique mondiale, ville ocre aux mille couleurs et saveurs.",
       tanger: "Carrefour entre l'Afrique et l'Europe, port stratégique et ville cosmopolite.",
       fes: "Capitale spirituelle et culturelle, berceau du savoir et de l'artisanat marocain.",
-      agadir: "Perle du Sud marocain, station balnéaire et destination touristique privilégiée."
+      agadir: "Perle du Sud marocain, station balnéaire et destination touristique privilégiée.",
+      oujda: "Carrefour de l'Oriental, événements économiques et culturels.",
+      laayoune: "Capitale du Sahara marocain, événements culturels sahariens.",
+      dakhla: "Perle du Sahara, événements sportifs nautiques et éco-tourisme."
     }
   },
   partners: {
@@ -251,6 +256,17 @@ export const fr = {
     explore: {
       title: "Explorez nos villes",
       description: "Cliquez sur n'importe quel point pour découvrir nos services dans cette ville"
+    },
+    cityHighlights: {
+      tanger: ["Événements Internationaux", "Échanges Culturels", "Salons Euro-Africains"],
+      rabat: ["Événements Officiels", "Cérémonies d'État", "Conférences Diplomatiques"],
+      casablanca: ["Salons Professionnels", "Congrès Internationaux", "Événements d'Entreprise"],
+      fes: ["Festivals Culturels", "Événements Patrimoniaux", "Tourisme Culturel"],
+      marrakech: ["Galas de Luxe", "Événements Touristiques", "Mariages Prestigieux"],
+      agadir: ["Événements de Plage", "Activités Estivales", "Tourisme d'Affaires"],
+      oujda: ["Salons Régionaux", "Événements Transfrontaliers", "Festivals de l'Oriental"],
+      laayoune: ["Festivals Sahariens", "Événements Culturels", "Activités Touristiques"],
+      dakhla: ["Sports Nautiques", "Événements Éco-touristiques", "Festivals Maritimes"]
     }
   },
   whatsapp: {
@@ -418,6 +434,7 @@ export const fr = {
     cta: {
       whatsapp: "Discuter sur WhatsApp",
       call: "Nous Appeler Directement"
-    }
+    },
+    whatsappLabel: "WhatsApp"
   }
 };

@@ -65,29 +65,31 @@ export const en = {
   services: {
     title: "Our services",
     subtitle: "Complete solutions for your events",
-    description: "From reception to animation, we offer a complete range of services adapted to all your event needs. Our team of experts supports you to create unique and memorable experiences.",
+    description: "From reception to animation, we offer a complete range of services to make your event a memorable success.",
     categories: {
       eventHosting: {
         title: "EVENT HOSTING",
-        services: {
-          congresses: "Congresses and conferences",
-          fairs: "Trade shows and fairs",
-          inaugurations: "Inaugurations",
-          launches: "Product launches",
-          galas: "Galas and evenings",
-          professional: "Professional events"
-        }
+        items: [
+          { name: "Event hostesses & hosts", description: "FR/AR/EN + other languages on request: RU, ES, etc." },
+          { name: "Guest reception, guidance and seating", description: "Professional visitor guidance" },
+          { name: "VIP lounge & protocol space management", description: "Premium service for exclusive spaces" },
+          { name: "Check-in & guest list management", description: "QR code, tablets, on-site printing" },
+          { name: "Badge/wristband distribution", description: "Accreditation management" },
+          { name: "Access control & flow management", description: "Security and entrance organization" },
+          { name: "Cloakroom & information desk", description: "Additional reception services" },
+          { name: "Brand ambassadors", description: "Product presentations, demonstrations" },
+          { name: "International hosts/hostesses", description: "Russian, French, English speakers, Sub-Saharan Africa" },
+          { name: "Roller skate entertainers", description: "Dynamic and original animation" },
+          { name: "Mascots for public operations", description: "Fun entertainment for all audiences" }
+        ]
       },
-      animation: {
-        title: "ANIMATION",
-        services: {
-          commercial: "Commercial animation",
-          promotion: "Sales promotion",
-          sampling: "Sample distribution",
-          surveys: "Surveys and polls",
-          awareness: "Awareness campaigns",
-          roadshows: "Roadshows"
-        }
+      mobility: {
+        title: "MOBILITY & TRANSFERS",
+        items: [
+          { name: "Airport ↔ hotel / event venue transfers", description: "VIP and professional transportation" },
+          { name: "City tours & shuttle transport", description: "Organized tours and shuttles" },
+          { name: "Private drivers & valets", description: "Personalized driving service" }
+        ]
       }
     },
     cta: {
@@ -230,7 +232,10 @@ export const en = {
       marrakech: "World tourist destination, ochre city with a thousand colors and flavors.",
       tanger: "Crossroads between Africa and Europe, strategic port and cosmopolitan city.",
       fes: "Spiritual and cultural capital, cradle of Moroccan knowledge and crafts.",
-      agadir: "Pearl of southern Morocco, seaside resort and privileged tourist destination."
+      agadir: "Pearl of southern Morocco, seaside resort and privileged tourist destination.",
+      oujda: "Oriental crossroads, economic and cultural events.",
+      laayoune: "Capital of the Moroccan Sahara, Saharan cultural events.",
+      dakhla: "Pearl of the Sahara, nautical sports and eco-tourism events."
     }
   },
   partners: {
@@ -251,6 +256,17 @@ export const en = {
     explore: {
       title: "Explore our cities",
       description: "Click on any point to discover our services in that city"
+    },
+    cityHighlights: {
+      tanger: ["International Events", "Cultural Exchanges", "Euro-African Trade Shows"],
+      rabat: ["Official Events", "State Ceremonies", "Diplomatic Conferences"],
+      casablanca: ["Professional Trade Shows", "International Congresses", "Corporate Events"],
+      fes: ["Cultural Festivals", "Heritage Events", "Cultural Tourism"],
+      marrakech: ["Luxury Galas", "Tourism Events", "Prestigious Weddings"],
+      agadir: ["Beach Events", "Summer Activities", "Business Tourism"],
+      oujda: ["Regional Trade Shows", "Cross-border Events", "Oriental Festivals"],
+      laayoune: ["Saharan Festivals", "Cultural Events", "Tourism Activities"],
+      dakhla: ["Water Sports", "Eco-tourism Events", "Maritime Festivals"]
     }
   },
   whatsapp: {
@@ -418,6 +434,7 @@ export const en = {
     cta: {
       whatsapp: "Chat on WhatsApp",
       call: "Call Us Directly"
-    }
+    },
+    whatsappLabel: "WhatsApp"
   }
 };

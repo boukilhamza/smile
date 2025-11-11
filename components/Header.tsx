@@ -22,7 +22,7 @@ const Header = () => {
 
   const navigation = [
     { name: t.home.title, href: '/' },
-    { name: t.services.title, href: '/#services' },
+    { name: t.services.title, href: '/services' },
     { name: t.common.joinButton, href: '/recrutement' },
   ]
 
@@ -53,7 +53,7 @@ const Header = () => {
             {/* Desktop Navigation - Centered */}
             <div className="hidden lg:flex items-center justify-center flex-1 space-x-8">
               {navigation.map((item) => (
-                item.href.startsWith('/') ? (
+                item.href === '/' || item.href.startsWith('/') && !item.href.includes('#') ? (
                   <Link
                     key={item.name}
                     href={item.href}
@@ -67,7 +67,11 @@ const Header = () => {
                     key={item.name}
                     href={item.href}
                     className="text-gray-700 hover:text-primary-900 font-medium transition-colors duration-200"
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+                      setIsMenuOpen(false);
+                    }}
                   >
                     {item.name}
                   </a>
@@ -102,7 +106,7 @@ const Header = () => {
             <div className="lg:hidden mt-4 pb-4 border-t border-gray-200">
               <div className="flex flex-col space-y-4 pt-4">
                 {navigation.map((item) => (
-                  item.href.startsWith('/') ? (
+                  item.href === '/' || item.href.startsWith('/') && !item.href.includes('#') ? (
                     <Link
                       key={item.name}
                       href={item.href}
@@ -116,7 +120,11 @@ const Header = () => {
                       key={item.name}
                       href={item.href}
                       className="text-gray-700 hover:text-primary-900 font-medium transition-colors duration-200"
-                      onClick={() => setIsMenuOpen(false)}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+                        setIsMenuOpen(false);
+                      }}
                     >
                       {item.name}
                     </a>

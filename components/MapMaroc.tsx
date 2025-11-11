@@ -58,7 +58,7 @@ const MapMaroc = () => {
       name: 'Tanger',
       region: 'Tanger-Tétouan-Al Hoceïma',
       description: t.zones.cityDescriptions.tanger,
-      highlights: ['International Events', 'Cultural Exchanges', 'Euro-African Trade Shows'],
+      highlights: t.map.cityHighlights.tanger,
       image: '/images/villes/tanger.png',
       coordinates: [-5.8, 35.76] as [number, number]
     },
@@ -66,7 +66,7 @@ const MapMaroc = () => {
       name: 'Rabat',
       region: 'Rabat-Salé-Kénitra',
       description: t.zones.cityDescriptions.rabat,
-      highlights: ['Official Events', 'State Ceremonies', 'Diplomatic Conferences'],
+      highlights: t.map.cityHighlights.rabat,
       image: '/images/villes/rabat.png',
       coordinates: [-6.83, 33.97] as [number, number]
     },
@@ -74,7 +74,7 @@ const MapMaroc = () => {
       name: 'Casablanca',
       region: 'Grand Casablanca',
       description: t.zones.cityDescriptions.casablanca,
-      highlights: ['Professional Trade Shows', 'International Congresses', 'Corporate Events'],
+      highlights: t.map.cityHighlights.casablanca,
       image: '/images/villes/casablanca.png',
       coordinates: [-7.62, 33.57] as [number, number]
     },
@@ -82,7 +82,7 @@ const MapMaroc = () => {
       name: 'Fès',
       region: 'Fès-Meknès',
       description: t.zones.cityDescriptions.fes,
-      highlights: ['Cultural Festivals', 'Heritage Events', 'Cultural Tourism'],
+      highlights: t.map.cityHighlights.fes,
       image: '/images/villes/fès.png',
       coordinates: [-5.0, 34.03] as [number, number]
     },
@@ -90,7 +90,7 @@ const MapMaroc = () => {
       name: 'Marrakech',
       region: 'Marrakech-Safi',
       description: t.zones.cityDescriptions.marrakech,
-      highlights: ['Luxury Galas', 'Tourism Events', 'Prestigious Weddings'],
+      highlights: t.map.cityHighlights.marrakech,
       image: '/images/villes/marrakech.png',
       coordinates: [-8.0, 31.63] as [number, number]
     },
@@ -98,31 +98,31 @@ const MapMaroc = () => {
       name: 'Agadir',
       region: 'Souss-Massa',
       description: t.zones.cityDescriptions.agadir,
-      highlights: ['Beach Events', 'Summer Activities', 'Business Tourism'],
+      highlights: t.map.cityHighlights.agadir,
       image: '/images/villes/agadir.png',
       coordinates: [-9.6, 30.42] as [number, number]
     },
     oujda: {
       name: 'Oujda',
       region: 'Oriental',
-      description: 'Carrefour de l\'Oriental, événements économiques et culturels.',
-      highlights: ['Regional Trade Shows', 'Cross-border Events', 'Oriental Festivals'],
+      description: t.zones.cityDescriptions.oujda,
+      highlights: t.map.cityHighlights.oujda,
       image: '/images/villes/oujda.png',
       coordinates: [-1.91, 34.68] as [number, number]
     },
     laayoune: {
       name: 'Laâyoune',
       region: 'Laâyoune-Sakia El Hamra',
-      description: 'Capitale du Sahara marocain, événements culturels sahariens.',
-      highlights: ['Saharan Festivals', 'Cultural Events', 'Tourism Activities'],
+      description: t.zones.cityDescriptions.laayoune,
+      highlights: t.map.cityHighlights.laayoune,
       image: '/images/villes/laayoune.png',
       coordinates: [-13.18, 27.15] as [number, number]
     },
     dakhla: {
       name: 'Dakhla',
       region: 'Dakhla-Oued Ed-Dahab',
-      description: 'Perle du Sahara, événements sportifs nautiques et éco-tourisme.',
-      highlights: ['Water Sports', 'Eco-tourism Events', 'Maritime Festivals'],
+      description: t.zones.cityDescriptions.dakhla,
+      highlights: t.map.cityHighlights.dakhla,
       image: '/images/villes/dakhla.png',
       coordinates: [-15.95, 23.72] as [number, number]
     }

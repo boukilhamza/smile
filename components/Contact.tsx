@@ -40,7 +40,7 @@ const Contact = () => {
       icon: Phone,
       title: t.contact.form.phone,
       details: [t.common.phone],
-      action: 'tel:+212707776819'
+      action: 'https://wa.me/212707776819'
     },
     {
       icon: WhatsAppIcon,

@@ -191,7 +191,9 @@ export default function WhyUsTemp() {
                   {t.common.quoteButton}
                 </motion.a>
                 <motion.a 
-                  href="tel:+212707776819" 
+                  href="https://wa.me/212707776819" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="border-2 border-white text-white hover:bg-white hover:text-primary-900 font-bold py-4 px-8 rounded-lg transition-all duration-300 inline-flex items-center backdrop-blur-sm hover:shadow-xl transform hover:-translate-y-1"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

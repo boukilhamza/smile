@@ -30,7 +30,7 @@ const AboutServices = () => {
       icon: Calendar,
       title: t.aboutServices.services.special.title,
       description: t.aboutServices.services.special.description,
-      image: '/images/accueil.jpeg',
+      image: '/images/acueil.jpeg',
       features: t.aboutServices.services.special.features
     }
   ]

@@ -13,7 +13,6 @@ const PartnersCarousel = () => {
 
   useEffect(() => {
     if (isInView) {
-      // Animate clients
       const animateValue = (key: string, endValue: number, delay: number) => {
         setTimeout(() => {
           let current = 0;
@@ -36,10 +35,51 @@ const PartnersCarousel = () => {
       animateValue('retention', 98, 900);
     }
   }, [isInView]);
+
   const partners = [
     {
       name: 'Chambre des Pêches Maritimes',
       logo: '/images/partners/Chambre-des-Peches-Maritimes-Atlantique-Centre-Agadir (1).jpg'
+    },
+    {
+      name: 'Marrakech du Rire',
+      logo: '/images/partners/Marrakech_du_rire_-_logo.jpg'
+    },
+    {
+      name: 'Partenaire 1',
+      logo: '/images/partners/WhatsApp Image 2025-11-09 at 20.01.15.jpeg'
+    },
+    {
+      name: 'Partenaire 2',
+      logo: '/images/partners/WhatsApp Image 2025-11-09 at 20.01.16 (1).jpeg'
+    },
+    {
+      name: 'Partenaire 3',
+      logo: '/images/partners/WhatsApp Image 2025-11-09 at 20.01.16 (2).jpeg'
+    },
+    {
+      name: 'Partenaire 4',
+      logo: '/images/partners/WhatsApp Image 2025-11-09 at 20.01.16.jpeg'
+    },
+    {
+      name: 'Partenaire 5',
+      logo: '/images/partners/WhatsApp Image 2025-11-09 at 20.01.17 (1).jpeg'
+    },
+    {
+      name: 'Partenaire 6',
+      logo: '/images/partners/WhatsApp Image 2025-11-09 at 20.01.17 (2).jpeg'
+    },
+    {
+      name: 'Partenaire 7',
+      logo: '/images/partners/WhatsApp Image 2025-11-09 at 20.01.17 (3).jpeg'
+    },
+    {
+      name: 'Partenaire 8',
+      logo: '/images/partners/WhatsApp Image 2025-11-09 at 20.01.17.jpeg'
+    },
+    {
+      name: 'Partenaire 9',
+      logo: '/images/partners/WhatsApp Image 2025-11-09 at 20.06.37.jpeg'
     },
     {
       name: 'Environmental Defense Fund',
@@ -50,22 +90,18 @@ const PartnersCarousel = () => {
       logo: '/images/partners/gizlogo-unternehmen-de-rgb-300.jpg'
     },
     {
-      name: 'Marrakech du Rire',
-      logo: '/images/partners/Marrakech_du_rire_-_logo.jpg'
-    },
-    {
-      name: 'Partner 5',
+      name: 'Partenaire 10',
       logo: '/images/partners/th.jpg'
     },
     {
-      name: 'Partner 6',
+      name: 'Partenaire 11',
       logo: '/images/partners/unnamed.png'
     }
   ]
 
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-white overflow-hidden">
       <div className="container-custom">
         {/* Header */}
         <motion.div
@@ -86,35 +122,56 @@ const PartnersCarousel = () => {
           </p>
         </motion.div>
 
-        {/* Partners Grid - Responsive */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6"
-        >
-          {partners.map((partner, index) => (
+        {/* Défilement automatique des logos */}
+        <div className="relative mb-16">
+          <div className="flex overflow-hidden">
             <motion.div
-              key={partner.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="group"
+              className="flex gap-12 md:gap-16"
+              animate={{
+                x: [0, -100 * partners.length],
+              }}
+              transition={{
+                x: {
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  duration: 30,
+                  ease: "linear",
+                },
+              }}
             >
-              <div className="relative h-24 md:h-28 bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 p-4 flex items-center justify-center group-hover:scale-105">
-                <Image
-                  src={partner.logo}
-                  alt={partner.name}
-                  fill
-                  className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300 p-2"
-                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 16vw"
-                />
-              </div>
+              {/* Premier set de logos */}
+              {partners.map((partner, index) => (
+                <div
+                  key={`first-${index}`}
+                  className="flex-shrink-0 w-40 h-24 md:w-48 md:h-32 relative bg-white rounded-lg shadow-sm p-4 flex items-center justify-center"
+                >
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    fill
+                    className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300 p-2"
+                    sizes="(max-width: 768px) 160px, 192px"
+                  />
+                </div>
+              ))}
+              {/* Dupliquer les logos pour un défilement infini */}
+              {partners.map((partner, index) => (
+                <div
+                  key={`second-${index}`}
+                  className="flex-shrink-0 w-40 h-24 md:w-48 md:h-32 relative bg-white rounded-lg shadow-sm p-4 flex items-center justify-center"
+                >
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    fill
+                    className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300 p-2"
+                    sizes="(max-width: 768px) 160px, 192px"
+                  />
+                </div>
+              ))}
             </motion.div>
-          ))}
-        </motion.div>
+          </div>
+        </div>
 
         {/* Stats Section */}
         <motion.div

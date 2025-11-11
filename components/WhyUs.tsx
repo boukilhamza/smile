@@ -118,7 +118,7 @@ const WhyUs = () => {
               <a href="#contact" className="bg-white text-primary-900 hover:bg-gray-100 font-bold py-4 px-8 rounded-lg transition-colors duration-300 inline-flex items-center">
                 {t.common.quoteButton}
               </a>
-              <a href="tel:+212707776819" className="border-2 border-white text-white hover:bg-white hover:text-primary-900 font-bold py-4 px-8 rounded-lg transition-colors duration-300 inline-flex items-center">
+              <a href="https://wa.me/212707776819" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white hover:bg-white hover:text-primary-900 font-bold py-4 px-8 rounded-lg transition-colors duration-300 inline-flex items-center">
                 {t.common.callButton}
               </a>
             </div>

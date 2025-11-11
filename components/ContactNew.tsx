@@ -223,11 +223,11 @@ const ContactNew = () => {
                   rel="noopener noreferrer"
                   className="flex items-start gap-4 group"
                 >
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-primary-900 transition-colors">
-                    <Phone className="w-6 h-6 text-primary-800 group-hover:text-white" />
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-green-600 transition-colors">
+                    <WhatsAppIcon className="w-6 h-6 text-green-600 group-hover:text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">{t.contactNew.form.phone}</h4>
+                    <h4 className="font-semibold text-gray-900 mb-1">{t.contactNew.whatsappLabel}</h4>
                     <p className="text-gray-600 group-hover:text-primary-900">
                       +212 707-776819
                     </p>
