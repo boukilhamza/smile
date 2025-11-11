@@ -29,12 +29,12 @@ const Hero = () => {
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Images without fade */}
       <div className="absolute inset-0 z-0">
-        <Image 
+        <Image
           key={currentImageIndex}
           src={images[currentImageIndex]}
           alt="Hôtesses d'accueil professionnelles au Maroc"
           fill
-          className="object-cover"
+          className="object-cover object-[50%_10%]"
           sizes="100vw"
           priority
           quality={95}
