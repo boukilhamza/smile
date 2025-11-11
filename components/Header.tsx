@@ -90,8 +90,9 @@ const Header = () => {
               </a>
             </div>
 
-            {/* Mobile menu button */}
-            <div className="lg:hidden ml-auto">
+            {/* Mobile language selector and menu button */}
+            <div className="lg:hidden ml-auto flex items-center space-x-3">
+              <LanguageSelectorNew />
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-gray-700 hover:text-primary-900 transition-colors"
@@ -137,9 +138,6 @@ const Header = () => {
                 >
                   {t.common.quoteButton}
                 </a>
-                <div className="mt-4 flex justify-center">
-                  <LanguageSelectorNew />
-                </div>
               </div>
             </div>
           )}
